@@ -85,21 +85,21 @@ namespace Hangman
         {
             if (CategoryEnum == CategoryEnum.FOOD)
             {
-                string[] food = System.IO.File.ReadAllLines(@"C:\Users\37126\Documents\Mētra_.net\Victoria and Meetra\Hangman\Hangman\food.txt");
+                string[] food = System.IO.File.ReadAllLines(@" [ADD YOUR LOCAL PATH]food.txt");
                 WordToGuess = food[new Random().Next(0, food.Length)];
                 Choosed();
                 return WordToGuess;
             }
             else if (CategoryEnum == CategoryEnum.ANIMALS)
             {
-                string[] animals = System.IO.File.ReadAllLines(@"C:\Users\37126\Documents\Mētra_.net\Victoria and Meetra\Hangman\Hangman\animals.txt");
+                string[] animals = System.IO.File.ReadAllLines(@"[ADD YOUR LOCAL PATH]animals.txt");
                 WordToGuess = animals[new Random().Next(0, animals.Length)];
                 Choosed();
                 return WordToGuess;
             }
             else
             {
-                string[] travel = System.IO.File.ReadAllLines(@"C:\Users\37126\Documents\Mētra_.net\Victoria and Meetra\Hangman\Hangman\travel.txt");
+                string[] travel = System.IO.File.ReadAllLines(@"[ADD YOUR LOCAL PATH]travel.txt");
                 WordToGuess = travel[new Random().Next(0, travel.Length)];
                 Choosed();
                 return WordToGuess;
